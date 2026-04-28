@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Forgive Me — A Theatrical Apology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stage">
+
+    <!-- Curtains -->
+    <div class="curtain" id="curtain">
+      <div class="left"><div class="folds"></div></div>
+      <div class="right"><div class="folds"></div></div>
+    </div>
+
+    <!-- Spotlight -->
+    <div class="spotlight"></div>
+
+    <!-- Podium / content -->
+    <div class="podium" id="podium" aria-live="polite">
+      <div class="leftstage">
+        <div class="title">An appology letter</div>
+        <div class="subtitle">Ab chup nhi raha jata to sorry madam ji😭</div>
+
+        <div class="envelope" style="margin-top:18px">
+          <div class="paper folded" id="paper">
+            <div class="from">To: <span id="toName">Rittuu</span></div>
+            <div class="to">From: <span id="fromName">Ur love</span></div>
+            <div class="body" id="bodyText"></div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="btn primary" id="openBtn">Open my heart</button>
+        </div>
+
+        <div class="forgive">
+          <button class="btn" id="forgiveYes">Forgive ❤️</button>
+        </div>
+
+      </div>
+    </div>
+
+    <canvas id="confetti"></canvas>
+    <!-- decorative petals (clone via JS) -->
+    <div id="petals"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
